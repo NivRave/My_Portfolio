@@ -1,3 +1,10 @@
+/**
+    Sudoku solver using backtracking
+    @file Puzzle.cpp
+    @author Niv Rave
+    @version final 01/12/2020
+*/
+
 #include "Puzzle.h"
 
 //Puzzle object constructor
