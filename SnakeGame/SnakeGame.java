@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 public class SnakeGame extends JFrame implements ActionListener{
 	
-	GamePanel game;
+	SnakePanel game;
 	MainMenu menu;
 	
 	SnakeGame(){
@@ -32,7 +32,7 @@ public class SnakeGame extends JFrame implements ActionListener{
 		if(e.getSource()==menu.startButton){
 			this.remove(menu);
 			//this.add(game.restartButton);
-			game=new GamePanel();
+			game=new SnakePanel();
 			game.restartButton.addActionListener(this);
 			this.add(game);
 			game.requestFocusInWindow();

@@ -21,8 +21,8 @@ public class Apple{
 	}
 	
 	public void createApple(){//CHANGE TO != SNAKE BODY HASHMAP
-		x = rand.nextInt((int)(GamePanel.MAP_WIDTH/GamePanel.CELL_SIZE))*GamePanel.CELL_SIZE;
-		y = rand.nextInt((int)(GamePanel.MAP_HEIGHT/GamePanel.CELL_SIZE))*GamePanel.CELL_SIZE;
+		x = rand.nextInt((int)(SnakePanel.MAP_WIDTH/SnakePanel.CELL_SIZE))*SnakePanel.CELL_SIZE;
+		y = rand.nextInt((int)(SnakePanel.MAP_HEIGHT/SnakePanel.CELL_SIZE))*SnakePanel.CELL_SIZE;
 		
 	}
 	

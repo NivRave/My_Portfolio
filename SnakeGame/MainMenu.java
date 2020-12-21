@@ -9,7 +9,7 @@ public class MainMenu	extends JPanel implements ActionListener{//maybe make abst
 	public JButton startButton;
 
 	MainMenu(){
-		this.setPreferredSize(new Dimension(GamePanel.MAP_WIDTH,GamePanel.MAP_HEIGHT));
+		this.setPreferredSize(new Dimension(SnakePanel.MAP_WIDTH,SnakePanel.MAP_HEIGHT));
 		//this.setLayout(new BorderLayout());;
 		this.setBackground(Color.black);//maybe change to interactive
 		this.setFocusable(true);
@@ -29,13 +29,13 @@ public class MainMenu	extends JPanel implements ActionListener{//maybe make abst
         header.setFont(new Font(null,Font.BOLD, 40));
 		header.setSize(100, 100);
 		header.setForeground(Color.white);
-		header.setLocation(GamePanel.MAP_WIDTH/2-100,GamePanel.MAP_HEIGHT/2-100);
+		header.setLocation(SnakePanel.MAP_WIDTH/2-100,SnakePanel.MAP_HEIGHT/2-100);
 		//Start button:
 		startButton = new JButton();
 		startButton.setText("New Game");
 		startButton.setFont(new Font(null,Font.BOLD, 40));
 		startButton.setSize(100, 100);
-		startButton.setLocation(GamePanel.MAP_WIDTH/2,GamePanel.MAP_HEIGHT/2);
+		startButton.setLocation(SnakePanel.MAP_WIDTH/2,SnakePanel.MAP_HEIGHT/2);
 		//this.add(img, gbc);
 		this.add(header,gbc);
 		this.add(startButton, gbc);	
